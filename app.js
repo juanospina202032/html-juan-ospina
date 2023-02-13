@@ -23,12 +23,8 @@ document.addEventListener("DOMcontentLoaded"), () => {});
     { 
       name: "6",
       img: "images/6.jpg"
-    },
-    {
-      name: "7",
-      img: "images/7.jpg"
-    },
-    {
-      name "8",
-      img   
+    }
+ ]
+ }];
 
+ const cuadricula = document.querySelector("")
