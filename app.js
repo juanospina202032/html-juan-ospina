@@ -1,4 +1,4 @@
-document.addEventListener("DOMcontentLoaded"), () => {});
+document.addEventListener("DOMcontentLoaded"), () => {};
   const cardadj = [
     {
       name: "1",
@@ -32,9 +32,8 @@ document.addEventListener("DOMcontentLoaded"), () => {});
  var cartasEscogidasId = [];
  var cartasGanadas = [];
 
-});
 
-  function creartablero()
+ { function creartablero()
     for (let i = 0; i < cardadj.length; i++) {
      var carta = document.createElement("img");
 
@@ -46,4 +45,17 @@ document.addEventListener("DOMcontentLoaded"), () => {});
 
       cuadricula.appendChild(carta);
     }
+}
+
+
+  function voltearCarta() {
+    var cardId = this.getAttribute("data-id");
+    cartasEscogidas.push(cardAdj[cardId].name);
+    cartasEscogidadId.push(cardId);
+    this.setAttribute("src", cardAdj[cardId].img);
+    if (cartasEscogidas.lenght === 2) {
+      setTimeout(verificarPareja, 1000);
+    }
   }
+creartablero();
+; 
