@@ -59,3 +59,26 @@ document.addEventListener("DOMcontentLoaded"), () => {};
   }
 creartablero();
 ; 
+
+
+
+
+function verificarPareja() {
+  var cards = documents.querySelectorAll("img");
+  const opcionUnoId = cartasEscogidasId[0];
+  const OpcionDosId = cartasEscogidasId[1];
+
+  if (opcionUnoId === opcionDosId) {
+    cards[opcionUnoId].setAttribute("src", "images/reverso.png");
+    cards[opcionDodId].setAttribute("src", "images/reverso.png");
+    alert("¡Diste click a la misma imagen!");
+  } else if (cartasEscogidas)[0] === cartasEscogidas[1]) {
+    alert("correcto");
+    cards[opcionUnoId].setAttribute("src", "images/blank.png");
+    cards[opcionDosId].setAttribute("src", "images/blank.png"); 
+    cards[opcionUnoId].removeEventListener("click", voltearCarta);
+    cards[opcionDosId].removeEventListener("click", voltearCarta);
+  } else {
+    cards[opcionUnoId].setAttribute("src", "images/reverso.png");
+    cards[opcionDosId].setAttribute("src", "images/reverso.png");
+    alert("Intenta de nuevo");
